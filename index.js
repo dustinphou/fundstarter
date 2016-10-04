@@ -27,7 +27,7 @@ fs.stat(filePath, (err, stats) =>
 						response.writeHead(200, {'Content-Type': 'text/html'});
 						response.write(data);
 						response.end();
-					}).listen(3000);
+					}).listen(process.env.PORT || 8080);
 				}
 			});
 		}
