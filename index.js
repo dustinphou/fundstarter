@@ -12,7 +12,7 @@ fs.stat(filePath, (err, stats) =>
 		else
 		{
 			console.log(stats.size);
-			var buff = Buffer.alloc(stats.size, 1);
+			var buff = Buffer.alloc(2488, 1);
 			fs.open(filePath, 'r', function (err, fd) {
 				if(err)
 				{
@@ -20,7 +20,7 @@ fs.stat(filePath, (err, stats) =>
 				}
 				else
 				{
-					fs.read(fd, buff, 0, stats.size)
+					fs.read(fd, buff, 0, 2488)
 					var data = buff.toString('utf8');
 					http.createServer(function(request, response) 
 					{
