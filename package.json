@@ -1,29 +1,26 @@
 {
-  "name": "node-js-sample",
-  "version": "0.2.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "fundstarter",
+  "version": "1.0.0",
+  "description": "Node and Express simple app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "^4.13.3"
-  },
-  "engines": {
-    "node": "4.0.0"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+    "url": "git+https://github.com/dustinphou/fundstarter.git"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "express",
+    "heroku"
   ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
-  "license": "MIT"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustinphou/fundstarter/issues"
+  },
+  "homepage": "https://github.com/dustinphou/fundstarter#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
